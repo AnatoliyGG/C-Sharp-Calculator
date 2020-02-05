@@ -48,6 +48,7 @@
             this.Button_Plus = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Equally = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_0
@@ -243,11 +244,21 @@
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 20;
             // 
+            // Equally
+            // 
+            this.Equally.Location = new System.Drawing.Point(286, 528);
+            this.Equally.Name = "Equally";
+            this.Equally.Size = new System.Drawing.Size(268, 83);
+            this.Equally.TabIndex = 21;
+            this.Equally.Text = "=";
+            this.Equally.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 622);
+            this.Controls.Add(this.Equally);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Button_Plus);
@@ -298,6 +309,7 @@
         private System.Windows.Forms.Button Button_Plus;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Equally;
     }
 }
 
