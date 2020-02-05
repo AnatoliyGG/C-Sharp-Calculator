@@ -48,6 +48,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.Button_Plus = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Button_0
@@ -58,6 +59,7 @@
             this.Button_0.TabIndex = 0;
             this.Button_0.Text = "0";
             this.Button_0.UseVisualStyleBackColor = true;
+            this.Button_0.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_Point
             // 
@@ -67,6 +69,7 @@
             this.Button_Point.TabIndex = 1;
             this.Button_Point.Text = ".";
             this.Button_Point.UseVisualStyleBackColor = true;
+            this.Button_Point.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_Equally
             // 
@@ -85,6 +88,7 @@
             this.Button_1.TabIndex = 3;
             this.Button_1.Text = "1";
             this.Button_1.UseVisualStyleBackColor = true;
+            this.Button_1.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_2
             // 
@@ -94,6 +98,7 @@
             this.Button_2.TabIndex = 4;
             this.Button_2.Text = "2";
             this.Button_2.UseVisualStyleBackColor = true;
+            this.Button_2.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_3
             // 
@@ -103,6 +108,7 @@
             this.Button_3.TabIndex = 5;
             this.Button_3.Text = "3";
             this.Button_3.UseVisualStyleBackColor = true;
+            this.Button_3.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_Share
             // 
@@ -112,6 +118,7 @@
             this.Button_Share.TabIndex = 6;
             this.Button_Share.Text = "/";
             this.Button_Share.UseVisualStyleBackColor = true;
+            this.Button_Share.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_4
             // 
@@ -121,6 +128,7 @@
             this.Button_4.TabIndex = 7;
             this.Button_4.Text = "4";
             this.Button_4.UseVisualStyleBackColor = true;
+            this.Button_4.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_5
             // 
@@ -130,6 +138,7 @@
             this.Button_5.TabIndex = 8;
             this.Button_5.Text = "5";
             this.Button_5.UseVisualStyleBackColor = true;
+            this.Button_5.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_6
             // 
@@ -139,6 +148,7 @@
             this.Button_6.TabIndex = 9;
             this.Button_6.Text = "6";
             this.Button_6.UseVisualStyleBackColor = true;
+            this.Button_6.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_Multiply
             // 
@@ -148,6 +158,7 @@
             this.Button_Multiply.TabIndex = 10;
             this.Button_Multiply.Text = "*";
             this.Button_Multiply.UseVisualStyleBackColor = true;
+            this.Button_Multiply.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_7
             // 
@@ -157,6 +168,7 @@
             this.Button_7.TabIndex = 11;
             this.Button_7.Text = "7";
             this.Button_7.UseVisualStyleBackColor = true;
+            this.Button_7.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_8
             // 
@@ -166,6 +178,7 @@
             this.Button_8.TabIndex = 12;
             this.Button_8.Text = "8";
             this.Button_8.UseVisualStyleBackColor = true;
+            this.Button_8.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_9
             // 
@@ -175,6 +188,7 @@
             this.Button_9.TabIndex = 13;
             this.Button_9.Text = "9";
             this.Button_9.UseVisualStyleBackColor = true;
+            this.Button_9.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_Minus
             // 
@@ -184,6 +198,7 @@
             this.Button_Minus.TabIndex = 14;
             this.Button_Minus.Text = "-";
             this.Button_Minus.UseVisualStyleBackColor = true;
+            this.Button_Minus.Click += new System.EventHandler(this.Button_Click);
             // 
             // Button_Delete
             // 
@@ -220,6 +235,7 @@
             this.Button_Plus.TabIndex = 18;
             this.Button_Plus.Text = "+";
             this.Button_Plus.UseVisualStyleBackColor = true;
+            this.Button_Plus.Click += new System.EventHandler(this.Button_Click);
             // 
             // label1
             // 
@@ -228,11 +244,19 @@
             this.label1.Size = new System.Drawing.Size(545, 75);
             this.label1.TabIndex = 19;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(224, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 623);
+            this.ClientSize = new System.Drawing.Size(565, 622);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Button_Plus);
             this.Controls.Add(this.button18);
@@ -256,6 +280,7 @@
             this.Name = "Form1";
             this.Text = "Калькулятор";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -281,6 +306,7 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button Button_Plus;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
