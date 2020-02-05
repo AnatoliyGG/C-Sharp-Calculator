@@ -22,5 +22,16 @@ namespace Calculator
         {
             textBox1.Text += (sender as Button).Text;
         }
+
+        private void Button_Delete_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }    
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
+
+        }
     }
 }

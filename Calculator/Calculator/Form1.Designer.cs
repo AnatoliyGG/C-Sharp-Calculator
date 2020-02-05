@@ -30,7 +30,6 @@
         {
             this.Button_0 = new System.Windows.Forms.Button();
             this.Button_Point = new System.Windows.Forms.Button();
-            this.Button_Equally = new System.Windows.Forms.Button();
             this.Button_1 = new System.Windows.Forms.Button();
             this.Button_2 = new System.Windows.Forms.Button();
             this.Button_3 = new System.Windows.Forms.Button();
@@ -70,15 +69,6 @@
             this.Button_Point.Text = ".";
             this.Button_Point.UseVisualStyleBackColor = true;
             this.Button_Point.Click += new System.EventHandler(this.Button_Click);
-            // 
-            // Button_Equally
-            // 
-            this.Button_Equally.Location = new System.Drawing.Point(286, 528);
-            this.Button_Equally.Name = "Button_Equally";
-            this.Button_Equally.Size = new System.Drawing.Size(268, 83);
-            this.Button_Equally.TabIndex = 2;
-            this.Button_Equally.Text = "=";
-            this.Button_Equally.UseVisualStyleBackColor = true;
             // 
             // Button_1
             // 
@@ -208,6 +198,7 @@
             this.Button_Delete.TabIndex = 15;
             this.Button_Delete.Text = "C";
             this.Button_Delete.UseVisualStyleBackColor = true;
+            this.Button_Delete.Click += new System.EventHandler(this.Button_Delete_Click);
             // 
             // button17
             // 
@@ -217,6 +208,7 @@
             this.button17.TabIndex = 16;
             this.button17.Text = "<--";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -274,10 +266,10 @@
             this.Controls.Add(this.Button_3);
             this.Controls.Add(this.Button_2);
             this.Controls.Add(this.Button_1);
-            this.Controls.Add(this.Button_Equally);
             this.Controls.Add(this.Button_Point);
             this.Controls.Add(this.Button_0);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -288,7 +280,6 @@
 
         private System.Windows.Forms.Button Button_0;
         private System.Windows.Forms.Button Button_Point;
-        private System.Windows.Forms.Button Button_Equally;
         private System.Windows.Forms.Button Button_1;
         private System.Windows.Forms.Button Button_2;
         private System.Windows.Forms.Button Button_3;
