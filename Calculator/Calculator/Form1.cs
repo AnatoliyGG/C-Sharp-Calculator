@@ -30,8 +30,14 @@ namespace Calculator
 
         private void button17_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
+            try
+            {
+                textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
+            }
+            catch
+            {
 
+            }
         }
     }
 }
